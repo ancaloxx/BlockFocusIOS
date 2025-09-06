@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="bubbleDotCell" rowHeight="115" id="KGk-i7-Jjw" customClass="BubbleDotCell" customModule="BlockFocusApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="389" height="115"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="389" height="115"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mfl-ta-uEB" customClass="CustomView" customModule="BlockFocusApp" customModuleProvider="target">
+                        <rect key="frame" x="20" y="5" width="80" height="42"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="CgD-7I-xPj">
+                                <rect key="frame" x="16" y="14" width="48" height="14"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3TS-Ut-Kbp">
+                                        <rect key="frame" x="0.0" y="0.66666666666666607" width="14" height="12.666666666666668"/>
+                                        <color key="tintColor" systemColor="systemGray5Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="14" id="FLD-HP-G0f"/>
+                                            <constraint firstAttribute="height" constant="14" id="gSX-g5-Qcf"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="uSd-gR-Rtb">
+                                        <rect key="frame" x="17" y="0.66666666666666607" width="14" height="12.666666666666668"/>
+                                        <color key="tintColor" systemColor="systemGray5Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="14" id="2kT-2o-UDL"/>
+                                            <constraint firstAttribute="width" constant="14" id="xQ6-mA-BCj"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1tn-YW-M4N">
+                                        <rect key="frame" x="34" y="0.66666666666666607" width="14" height="12.666666666666668"/>
+                                        <color key="tintColor" systemColor="systemGray5Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="14" id="O0Z-RR-Jf5"/>
+                                            <constraint firstAttribute="width" constant="14" id="uwj-6i-9Op"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CgD-7I-xPj" firstAttribute="top" secondItem="Mfl-ta-uEB" secondAttribute="top" constant="14" id="Gvi-xw-bNE"/>
+                            <constraint firstAttribute="bottom" secondItem="CgD-7I-xPj" secondAttribute="bottom" constant="14" id="jHI-rM-TxK"/>
+                            <constraint firstAttribute="trailing" secondItem="CgD-7I-xPj" secondAttribute="trailing" constant="16" id="jX7-2u-cbm"/>
+                            <constraint firstItem="CgD-7I-xPj" firstAttribute="leading" secondItem="Mfl-ta-uEB" secondAttribute="leading" constant="16" id="qrZ-5v-Shh"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                <real key="value" value="14"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Mfl-ta-uEB" secondAttribute="bottom" constant="5" id="fPt-k4-pPs"/>
+                    <constraint firstItem="Mfl-ta-uEB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="iNA-jx-thS"/>
+                    <constraint firstItem="Mfl-ta-uEB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="iZE-b0-uLN"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Mfl-ta-uEB" secondAttribute="trailing" constant="20" id="se6-GF-5Tn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="150.38167938931298" y="13.732394366197184"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

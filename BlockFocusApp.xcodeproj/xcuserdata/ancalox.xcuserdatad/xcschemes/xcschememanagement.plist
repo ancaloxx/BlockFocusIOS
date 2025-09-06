@@ -7,7 +7,55 @@
 		<key>BlockFocusApp.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>BlockFocusAppDeviceActivityMonitor.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>BlockFocusAppDeviceActivityReport.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>BlockFocusAppShieldAction.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>BlockFocusAppShieldConfiguration.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>C0928A852E68E2E900EDF0F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C09290112E6AD4F500EDF0F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C09290282E6AE20900EDF0F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C092903A2E6AE25100EDF0F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C09291D22E6B237000EDF0F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

@@ -6,8 +6,86 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C06A60272E6C33BD0085A9D2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C06A60262E6C33BD0085A9D2 /* SnapKit */; };
+		C09290152E6AD4F500EDF0F1 /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09290142E6AD4F500EDF0F1 /* ManagedSettings.framework */; };
+		C09290172E6AD4F500EDF0F1 /* ManagedSettingsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09290162E6AD4F500EDF0F1 /* ManagedSettingsUI.framework */; };
+		C092901F2E6AD4F500EDF0F1 /* BlockFocusAppShieldConfiguration.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C09290122E6AD4F500EDF0F1 /* BlockFocusAppShieldConfiguration.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C092902A2E6AE20900EDF0F1 /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09290142E6AD4F500EDF0F1 /* ManagedSettings.framework */; };
+		C09290322E6AE20900EDF0F1 /* BlockFocusAppShieldAction.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C09290292E6AE20900EDF0F1 /* BlockFocusAppShieldAction.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C092903D2E6AE25100EDF0F1 /* DeviceActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C092903C2E6AE25100EDF0F1 /* DeviceActivity.framework */; };
+		C09290452E6AE25100EDF0F1 /* BlockFocusAppDeviceActivityMonitor.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C092903B2E6AE25100EDF0F1 /* BlockFocusAppDeviceActivityMonitor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C092904C2E6AFB1E00EDF0F1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C092904B2E6AFB1E00EDF0F1 /* Kingfisher */; };
+		C09291DF2E6B237000EDF0F1 /* BlockFocusAppDeviceActivityReport.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = C09291D32E6B237000EDF0F1 /* BlockFocusAppDeviceActivityReport.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C092901D2E6AD4F500EDF0F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0928A7E2E68E2E900EDF0F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C09290112E6AD4F500EDF0F1;
+			remoteInfo = BlockFocusAppShieldConfiguration;
+		};
+		C09290302E6AE20900EDF0F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0928A7E2E68E2E900EDF0F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C09290282E6AE20900EDF0F1;
+			remoteInfo = BlockFocusAppShieldAction;
+		};
+		C09290432E6AE25100EDF0F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0928A7E2E68E2E900EDF0F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C092903A2E6AE25100EDF0F1;
+			remoteInfo = BlockFocusAppDeviceActivityMonitor;
+		};
+		C09291DD2E6B237000EDF0F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0928A7E2E68E2E900EDF0F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C09291D22E6B237000EDF0F1;
+			remoteInfo = BlockFocusAppDeviceActivityReport;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C09290242E6AD4F500EDF0F1 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C09290452E6AE25100EDF0F1 /* BlockFocusAppDeviceActivityMonitor.appex in Embed Foundation Extensions */,
+				C09290322E6AE20900EDF0F1 /* BlockFocusAppShieldAction.appex in Embed Foundation Extensions */,
+				C092901F2E6AD4F500EDF0F1 /* BlockFocusAppShieldConfiguration.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C09291E42E6B237000EDF0F1 /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				C09291DF2E6B237000EDF0F1 /* BlockFocusAppDeviceActivityReport.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		C0928A862E68E2E900EDF0F1 /* BlockFocusApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockFocusApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C09290122E6AD4F500EDF0F1 /* BlockFocusAppShieldConfiguration.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BlockFocusAppShieldConfiguration.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C09290142E6AD4F500EDF0F1 /* ManagedSettings.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettings.framework; path = System/Library/Frameworks/ManagedSettings.framework; sourceTree = SDKROOT; };
+		C09290162E6AD4F500EDF0F1 /* ManagedSettingsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettingsUI.framework; path = System/Library/Frameworks/ManagedSettingsUI.framework; sourceTree = SDKROOT; };
+		C09290292E6AE20900EDF0F1 /* BlockFocusAppShieldAction.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BlockFocusAppShieldAction.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C092903B2E6AE25100EDF0F1 /* BlockFocusAppDeviceActivityMonitor.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BlockFocusAppDeviceActivityMonitor.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C092903C2E6AE25100EDF0F1 /* DeviceActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeviceActivity.framework; path = System/Library/Frameworks/DeviceActivity.framework; sourceTree = SDKROOT; };
+		C09291D32E6B237000EDF0F1 /* BlockFocusAppDeviceActivityReport.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = BlockFocusAppDeviceActivityReport.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -17,6 +95,34 @@
 				Info.plist,
 			);
 			target = C0928A852E68E2E900EDF0F1 /* BlockFocusApp */;
+		};
+		C09290232E6AD4F500EDF0F1 /* Exceptions for "BlockFocusAppShieldConfiguration" folder in "BlockFocusAppShieldConfiguration" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C09290112E6AD4F500EDF0F1 /* BlockFocusAppShieldConfiguration */;
+		};
+		C09290362E6AE20900EDF0F1 /* Exceptions for "BlockFocusAppShieldAction" folder in "BlockFocusAppShieldAction" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C09290282E6AE20900EDF0F1 /* BlockFocusAppShieldAction */;
+		};
+		C09290492E6AE25100EDF0F1 /* Exceptions for "BlockFocusAppDeviceActivityMonitor" folder in "BlockFocusAppDeviceActivityMonitor" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C092903A2E6AE25100EDF0F1 /* BlockFocusAppDeviceActivityMonitor */;
+		};
+		C09291E32E6B237000EDF0F1 /* Exceptions for "BlockFocusAppDeviceActivityReport" folder in "BlockFocusAppDeviceActivityReport" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C09291D22E6B237000EDF0F1 /* BlockFocusAppDeviceActivityReport */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -29,10 +135,76 @@
 			path = BlockFocusApp;
 			sourceTree = "<group>";
 		};
+		C09290182E6AD4F500EDF0F1 /* BlockFocusAppShieldConfiguration */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C09290232E6AD4F500EDF0F1 /* Exceptions for "BlockFocusAppShieldConfiguration" folder in "BlockFocusAppShieldConfiguration" target */,
+			);
+			path = BlockFocusAppShieldConfiguration;
+			sourceTree = "<group>";
+		};
+		C092902B2E6AE20900EDF0F1 /* BlockFocusAppShieldAction */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C09290362E6AE20900EDF0F1 /* Exceptions for "BlockFocusAppShieldAction" folder in "BlockFocusAppShieldAction" target */,
+			);
+			path = BlockFocusAppShieldAction;
+			sourceTree = "<group>";
+		};
+		C092903E2E6AE25100EDF0F1 /* BlockFocusAppDeviceActivityMonitor */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C09290492E6AE25100EDF0F1 /* Exceptions for "BlockFocusAppDeviceActivityMonitor" folder in "BlockFocusAppDeviceActivityMonitor" target */,
+			);
+			path = BlockFocusAppDeviceActivityMonitor;
+			sourceTree = "<group>";
+		};
+		C09291D42E6B237000EDF0F1 /* BlockFocusAppDeviceActivityReport */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C09291E32E6B237000EDF0F1 /* Exceptions for "BlockFocusAppDeviceActivityReport" folder in "BlockFocusAppDeviceActivityReport" target */,
+			);
+			path = BlockFocusAppDeviceActivityReport;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C0928A832E68E2E900EDF0F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C092904C2E6AFB1E00EDF0F1 /* Kingfisher in Frameworks */,
+				C06A60272E6C33BD0085A9D2 /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C092900F2E6AD4F500EDF0F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C09290152E6AD4F500EDF0F1 /* ManagedSettings.framework in Frameworks */,
+				C09290172E6AD4F500EDF0F1 /* ManagedSettingsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C09290262E6AE20900EDF0F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C092902A2E6AE20900EDF0F1 /* ManagedSettings.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C09290382E6AE25100EDF0F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C092903D2E6AE25100EDF0F1 /* DeviceActivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C09291D02E6B237000EDF0F1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,6 +218,11 @@
 			isa = PBXGroup;
 			children = (
 				C0928A882E68E2E900EDF0F1 /* BlockFocusApp */,
+				C09290182E6AD4F500EDF0F1 /* BlockFocusAppShieldConfiguration */,
+				C092902B2E6AE20900EDF0F1 /* BlockFocusAppShieldAction */,
+				C092903E2E6AE25100EDF0F1 /* BlockFocusAppDeviceActivityMonitor */,
+				C09291D42E6B237000EDF0F1 /* BlockFocusAppDeviceActivityReport */,
+				C09290132E6AD4F500EDF0F1 /* Frameworks */,
 				C0928A872E68E2E900EDF0F1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,8 +231,22 @@
 			isa = PBXGroup;
 			children = (
 				C0928A862E68E2E900EDF0F1 /* BlockFocusApp.app */,
+				C09290122E6AD4F500EDF0F1 /* BlockFocusAppShieldConfiguration.appex */,
+				C09290292E6AE20900EDF0F1 /* BlockFocusAppShieldAction.appex */,
+				C092903B2E6AE25100EDF0F1 /* BlockFocusAppDeviceActivityMonitor.appex */,
+				C09291D32E6B237000EDF0F1 /* BlockFocusAppDeviceActivityReport.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C09290132E6AD4F500EDF0F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C09290142E6AD4F500EDF0F1 /* ManagedSettings.framework */,
+				C09290162E6AD4F500EDF0F1 /* ManagedSettingsUI.framework */,
+				C092903C2E6AE25100EDF0F1 /* DeviceActivity.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,20 +259,116 @@
 				C0928A822E68E2E900EDF0F1 /* Sources */,
 				C0928A832E68E2E900EDF0F1 /* Frameworks */,
 				C0928A842E68E2E900EDF0F1 /* Resources */,
+				C09290242E6AD4F500EDF0F1 /* Embed Foundation Extensions */,
+				C09291E42E6B237000EDF0F1 /* Embed ExtensionKit Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C092901E2E6AD4F500EDF0F1 /* PBXTargetDependency */,
+				C09290312E6AE20900EDF0F1 /* PBXTargetDependency */,
+				C09290442E6AE25100EDF0F1 /* PBXTargetDependency */,
+				C09291DE2E6B237000EDF0F1 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				C0928A882E68E2E900EDF0F1 /* BlockFocusApp */,
 			);
 			name = BlockFocusApp;
 			packageProductDependencies = (
+				C092904B2E6AFB1E00EDF0F1 /* Kingfisher */,
+				C06A60262E6C33BD0085A9D2 /* SnapKit */,
 			);
 			productName = BlockFocusApp;
 			productReference = C0928A862E68E2E900EDF0F1 /* BlockFocusApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		C09290112E6AD4F500EDF0F1 /* BlockFocusAppShieldConfiguration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C09290202E6AD4F500EDF0F1 /* Build configuration list for PBXNativeTarget "BlockFocusAppShieldConfiguration" */;
+			buildPhases = (
+				C092900E2E6AD4F500EDF0F1 /* Sources */,
+				C092900F2E6AD4F500EDF0F1 /* Frameworks */,
+				C09290102E6AD4F500EDF0F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C09290182E6AD4F500EDF0F1 /* BlockFocusAppShieldConfiguration */,
+			);
+			name = BlockFocusAppShieldConfiguration;
+			packageProductDependencies = (
+			);
+			productName = BlockFocusAppShieldConfiguration;
+			productReference = C09290122E6AD4F500EDF0F1 /* BlockFocusAppShieldConfiguration.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C09290282E6AE20900EDF0F1 /* BlockFocusAppShieldAction */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C09290332E6AE20900EDF0F1 /* Build configuration list for PBXNativeTarget "BlockFocusAppShieldAction" */;
+			buildPhases = (
+				C09290252E6AE20900EDF0F1 /* Sources */,
+				C09290262E6AE20900EDF0F1 /* Frameworks */,
+				C09290272E6AE20900EDF0F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C092902B2E6AE20900EDF0F1 /* BlockFocusAppShieldAction */,
+			);
+			name = BlockFocusAppShieldAction;
+			packageProductDependencies = (
+			);
+			productName = BlockFocusAppShieldAction;
+			productReference = C09290292E6AE20900EDF0F1 /* BlockFocusAppShieldAction.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C092903A2E6AE25100EDF0F1 /* BlockFocusAppDeviceActivityMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C09290462E6AE25100EDF0F1 /* Build configuration list for PBXNativeTarget "BlockFocusAppDeviceActivityMonitor" */;
+			buildPhases = (
+				C09290372E6AE25100EDF0F1 /* Sources */,
+				C09290382E6AE25100EDF0F1 /* Frameworks */,
+				C09290392E6AE25100EDF0F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C092903E2E6AE25100EDF0F1 /* BlockFocusAppDeviceActivityMonitor */,
+			);
+			name = BlockFocusAppDeviceActivityMonitor;
+			packageProductDependencies = (
+			);
+			productName = BlockFocusAppDeviceActivityMonitor;
+			productReference = C092903B2E6AE25100EDF0F1 /* BlockFocusAppDeviceActivityMonitor.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C09291D22E6B237000EDF0F1 /* BlockFocusAppDeviceActivityReport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C09291E02E6B237000EDF0F1 /* Build configuration list for PBXNativeTarget "BlockFocusAppDeviceActivityReport" */;
+			buildPhases = (
+				C09291CF2E6B237000EDF0F1 /* Sources */,
+				C09291D02E6B237000EDF0F1 /* Frameworks */,
+				C09291D12E6B237000EDF0F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C09291D42E6B237000EDF0F1 /* BlockFocusAppDeviceActivityReport */,
+			);
+			name = BlockFocusAppDeviceActivityReport;
+			packageProductDependencies = (
+			);
+			productName = BlockFocusAppDeviceActivityReport;
+			productReference = C09291D32E6B237000EDF0F1 /* BlockFocusAppDeviceActivityReport.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,6 +383,18 @@
 					C0928A852E68E2E900EDF0F1 = {
 						CreatedOnToolsVersion = 16.4;
 					};
+					C09290112E6AD4F500EDF0F1 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					C09290282E6AE20900EDF0F1 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					C092903A2E6AE25100EDF0F1 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					C09291D22E6B237000EDF0F1 = {
+						CreatedOnToolsVersion = 16.4;
+					};
 				};
 			};
 			buildConfigurationList = C0928A812E68E2E900EDF0F1 /* Build configuration list for PBXProject "BlockFocusApp" */;
@@ -107,18 +406,54 @@
 			);
 			mainGroup = C0928A7D2E68E2E900EDF0F1;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C092904A2E6AFB1E00EDF0F1 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				C06A60252E6C33BD0085A9D2 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C0928A872E68E2E900EDF0F1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				C0928A852E68E2E900EDF0F1 /* BlockFocusApp */,
+				C09290112E6AD4F500EDF0F1 /* BlockFocusAppShieldConfiguration */,
+				C09290282E6AE20900EDF0F1 /* BlockFocusAppShieldAction */,
+				C092903A2E6AE25100EDF0F1 /* BlockFocusAppDeviceActivityMonitor */,
+				C09291D22E6B237000EDF0F1 /* BlockFocusAppDeviceActivityReport */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C0928A842E68E2E900EDF0F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C09290102E6AD4F500EDF0F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C09290272E6AE20900EDF0F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C09290392E6AE25100EDF0F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C09291D12E6B237000EDF0F1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,7 +470,58 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C092900E2E6AD4F500EDF0F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C09290252E6AE20900EDF0F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C09290372E6AE25100EDF0F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C09291CF2E6B237000EDF0F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C092901E2E6AD4F500EDF0F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C09290112E6AD4F500EDF0F1 /* BlockFocusAppShieldConfiguration */;
+			targetProxy = C092901D2E6AD4F500EDF0F1 /* PBXContainerItemProxy */;
+		};
+		C09290312E6AE20900EDF0F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C09290282E6AE20900EDF0F1 /* BlockFocusAppShieldAction */;
+			targetProxy = C09290302E6AE20900EDF0F1 /* PBXContainerItemProxy */;
+		};
+		C09290442E6AE25100EDF0F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C092903A2E6AE25100EDF0F1 /* BlockFocusAppDeviceActivityMonitor */;
+			targetProxy = C09290432E6AE25100EDF0F1 /* PBXContainerItemProxy */;
+		};
+		C09291DE2E6B237000EDF0F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C09291D22E6B237000EDF0F1 /* BlockFocusAppDeviceActivityReport */;
+			targetProxy = C09291DD2E6B237000EDF0F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C0928A9D2E68E2EA00EDF0F1 /* Debug */ = {
@@ -143,6 +529,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BlockFocusApp/BlockFocusApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MC2W6CM6SV;
@@ -153,6 +540,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -171,6 +559,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BlockFocusApp/BlockFocusApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MC2W6CM6SV;
@@ -181,6 +570,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,6 +705,216 @@
 			};
 			name = Release;
 		};
+		C09290212E6AD4F500EDF0F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BlockFocusAppShieldConfiguration/BlockFocusAppShieldConfiguration.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MC2W6CM6SV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlockFocusAppShieldConfiguration/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BlockFocusAppShieldConfiguration;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lox.BlockFocusApp.BlockFocusAppShieldConfiguration;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C09290222E6AD4F500EDF0F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BlockFocusAppShieldConfiguration/BlockFocusAppShieldConfiguration.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MC2W6CM6SV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlockFocusAppShieldConfiguration/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BlockFocusAppShieldConfiguration;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lox.BlockFocusApp.BlockFocusAppShieldConfiguration;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C09290342E6AE20900EDF0F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BlockFocusAppShieldAction/BlockFocusAppShieldAction.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MC2W6CM6SV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlockFocusAppShieldAction/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BlockFocusAppShieldAction;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lox.BlockFocusApp.BlockFocusAppShieldAction;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C09290352E6AE20900EDF0F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BlockFocusAppShieldAction/BlockFocusAppShieldAction.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MC2W6CM6SV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlockFocusAppShieldAction/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BlockFocusAppShieldAction;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lox.BlockFocusApp.BlockFocusAppShieldAction;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C09290472E6AE25100EDF0F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BlockFocusAppDeviceActivityMonitor/BlockFocusAppDeviceActivityMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MC2W6CM6SV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlockFocusAppDeviceActivityMonitor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BlockFocusAppDeviceActivityMonitor;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lox.BlockFocusApp.BlockFocusAppDeviceActivityMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C09290482E6AE25100EDF0F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BlockFocusAppDeviceActivityMonitor/BlockFocusAppDeviceActivityMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MC2W6CM6SV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlockFocusAppDeviceActivityMonitor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BlockFocusAppDeviceActivityMonitor;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lox.BlockFocusApp.BlockFocusAppDeviceActivityMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C09291E12E6B237000EDF0F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BlockFocusAppDeviceActivityReport/BlockFocusAppDeviceActivityReport.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MC2W6CM6SV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlockFocusAppDeviceActivityReport/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BlockFocusAppDeviceActivityReport;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lox.BlockFocusApp.BlockFocusAppDeviceActivityReport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C09291E22E6B237000EDF0F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BlockFocusAppDeviceActivityReport/BlockFocusAppDeviceActivityReport.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MC2W6CM6SV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlockFocusAppDeviceActivityReport/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BlockFocusAppDeviceActivityReport;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lox.BlockFocusApp.BlockFocusAppDeviceActivityReport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -336,7 +936,75 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		C09290202E6AD4F500EDF0F1 /* Build configuration list for PBXNativeTarget "BlockFocusAppShieldConfiguration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C09290212E6AD4F500EDF0F1 /* Debug */,
+				C09290222E6AD4F500EDF0F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C09290332E6AE20900EDF0F1 /* Build configuration list for PBXNativeTarget "BlockFocusAppShieldAction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C09290342E6AE20900EDF0F1 /* Debug */,
+				C09290352E6AE20900EDF0F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C09290462E6AE25100EDF0F1 /* Build configuration list for PBXNativeTarget "BlockFocusAppDeviceActivityMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C09290472E6AE25100EDF0F1 /* Debug */,
+				C09290482E6AE25100EDF0F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C09291E02E6B237000EDF0F1 /* Build configuration list for PBXNativeTarget "BlockFocusAppDeviceActivityReport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C09291E12E6B237000EDF0F1 /* Debug */,
+				C09291E22E6B237000EDF0F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C06A60252E6C33BD0085A9D2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		C092904A2E6AFB1E00EDF0F1 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C06A60262E6C33BD0085A9D2 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C06A60252E6C33BD0085A9D2 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		C092904B2E6AFB1E00EDF0F1 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C092904A2E6AFB1E00EDF0F1 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C0928A7E2E68E2E900EDF0F1 /* Project object */;
 }
