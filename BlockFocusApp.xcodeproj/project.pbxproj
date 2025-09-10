@@ -532,7 +532,7 @@
 				CODE_SIGN_ENTITLEMENTS = BlockFocusApp/BlockFocusApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MC2W6CM6SV;
+				DEVELOPMENT_TEAM = 4KM73YM59H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BlockFocusApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -540,13 +540,14 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lox.BlockFocusApp;
+				PRODUCT_BUNDLE_IDENTIFIER = in.appsquare.FocusApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -562,7 +563,7 @@
 				CODE_SIGN_ENTITLEMENTS = BlockFocusApp/BlockFocusApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MC2W6CM6SV;
+				DEVELOPMENT_TEAM = 4KM73YM59H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BlockFocusApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -570,13 +571,14 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lox.BlockFocusApp;
+				PRODUCT_BUNDLE_IDENTIFIER = in.appsquare.FocusApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -711,7 +713,7 @@
 				CODE_SIGN_ENTITLEMENTS = BlockFocusAppShieldConfiguration/BlockFocusAppShieldConfiguration.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MC2W6CM6SV;
+				DEVELOPMENT_TEAM = 4KM73YM59H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BlockFocusAppShieldConfiguration/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = BlockFocusAppShieldConfiguration;
@@ -723,7 +725,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lox.BlockFocusApp.BlockFocusAppShieldConfiguration;
+				PRODUCT_BUNDLE_IDENTIFIER = in.appsquare.FocusApp.BlockFocusAppShieldConfig;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -738,7 +740,7 @@
 				CODE_SIGN_ENTITLEMENTS = BlockFocusAppShieldConfiguration/BlockFocusAppShieldConfiguration.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MC2W6CM6SV;
+				DEVELOPMENT_TEAM = 4KM73YM59H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BlockFocusAppShieldConfiguration/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = BlockFocusAppShieldConfiguration;
@@ -750,7 +752,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lox.BlockFocusApp.BlockFocusAppShieldConfiguration;
+				PRODUCT_BUNDLE_IDENTIFIER = in.appsquare.FocusApp.BlockFocusAppShieldConfig;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -765,7 +767,7 @@
 				CODE_SIGN_ENTITLEMENTS = BlockFocusAppShieldAction/BlockFocusAppShieldAction.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MC2W6CM6SV;
+				DEVELOPMENT_TEAM = 4KM73YM59H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BlockFocusAppShieldAction/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = BlockFocusAppShieldAction;
@@ -776,7 +778,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lox.BlockFocusApp.BlockFocusAppShieldAction;
+				PRODUCT_BUNDLE_IDENTIFIER = in.appsquare.FocusApp.BlockFocusAppShieldAction;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -791,7 +793,7 @@
 				CODE_SIGN_ENTITLEMENTS = BlockFocusAppShieldAction/BlockFocusAppShieldAction.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MC2W6CM6SV;
+				DEVELOPMENT_TEAM = 4KM73YM59H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BlockFocusAppShieldAction/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = BlockFocusAppShieldAction;
@@ -802,7 +804,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lox.BlockFocusApp.BlockFocusAppShieldAction;
+				PRODUCT_BUNDLE_IDENTIFIER = in.appsquare.FocusApp.BlockFocusAppShieldAction;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -817,7 +819,7 @@
 				CODE_SIGN_ENTITLEMENTS = BlockFocusAppDeviceActivityMonitor/BlockFocusAppDeviceActivityMonitor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MC2W6CM6SV;
+				DEVELOPMENT_TEAM = 4KM73YM59H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BlockFocusAppDeviceActivityMonitor/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = BlockFocusAppDeviceActivityMonitor;
@@ -828,7 +830,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lox.BlockFocusApp.BlockFocusAppDeviceActivityMonitor;
+				PRODUCT_BUNDLE_IDENTIFIER = in.appsquare.FocusApp.BlockFocusAppDeviceActivityMonitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -843,7 +845,7 @@
 				CODE_SIGN_ENTITLEMENTS = BlockFocusAppDeviceActivityMonitor/BlockFocusAppDeviceActivityMonitor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MC2W6CM6SV;
+				DEVELOPMENT_TEAM = 4KM73YM59H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BlockFocusAppDeviceActivityMonitor/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = BlockFocusAppDeviceActivityMonitor;
@@ -854,7 +856,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lox.BlockFocusApp.BlockFocusAppDeviceActivityMonitor;
+				PRODUCT_BUNDLE_IDENTIFIER = in.appsquare.FocusApp.BlockFocusAppDeviceActivityMonitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -869,7 +871,7 @@
 				CODE_SIGN_ENTITLEMENTS = BlockFocusAppDeviceActivityReport/BlockFocusAppDeviceActivityReport.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MC2W6CM6SV;
+				DEVELOPMENT_TEAM = 4KM73YM59H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BlockFocusAppDeviceActivityReport/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = BlockFocusAppDeviceActivityReport;
@@ -880,7 +882,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lox.BlockFocusApp.BlockFocusAppDeviceActivityReport;
+				PRODUCT_BUNDLE_IDENTIFIER = in.appsquare.FocusApp.BlockFocusAppDeviceActivityReport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -895,7 +897,7 @@
 				CODE_SIGN_ENTITLEMENTS = BlockFocusAppDeviceActivityReport/BlockFocusAppDeviceActivityReport.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MC2W6CM6SV;
+				DEVELOPMENT_TEAM = 4KM73YM59H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BlockFocusAppDeviceActivityReport/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = BlockFocusAppDeviceActivityReport;
@@ -906,7 +908,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lox.BlockFocusApp.BlockFocusAppDeviceActivityReport;
+				PRODUCT_BUNDLE_IDENTIFIER = in.appsquare.FocusApp.BlockFocusAppDeviceActivityReport;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;

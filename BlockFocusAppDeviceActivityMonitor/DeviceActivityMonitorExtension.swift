@@ -19,7 +19,7 @@ class DeviceActivityMonitorExtension: DeviceActivityMonitor {
         super.intervalDidStart(for: activity)
         
         // Handle the start of the interval.
-        let userDefaults = UserDefaults(suiteName: "group.com.lox.BlockFocusApp.ShieldExt")
+        let userDefaults = UserDefaults(suiteName: "group.in.appsquare.FocusApp.shieldExt")
         let applications = userDefaults?.data(forKey: "applications") ?? Data()
         
         guard let selection = try? JSONDecoder().decode(FamilyActivitySelection.self,

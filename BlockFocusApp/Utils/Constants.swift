@@ -12,7 +12,7 @@ class Constants {
     
     static let DashboardStoryboard = UIStoryboard(name: "Main", bundle: nil)
     
-    static let userDefaults = UserDefaults(suiteName: "group.com.lox.BlockFocusApp.ShieldExt")
+    static let userDefaults = UserDefaults(suiteName: "group.in.appsquare.FocusApp.shieldExt")
     
     static let deviceActivityName = DeviceActivityName("FocusLock")
     
