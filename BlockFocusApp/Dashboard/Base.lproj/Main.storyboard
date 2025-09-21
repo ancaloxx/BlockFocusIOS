@@ -192,20 +192,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZYq-hc-2SM">
                                 <rect key="frame" x="0.0" y="296" width="393" height="328"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="856-4d-fNp" customClass="CustomImageView" customModule="BlockFocusApp" customModuleProvider="target">
-                                        <rect key="frame" x="132.66666666666666" y="100" width="127.99999999999997" height="128"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="128" id="91o-2g-Jk4"/>
-                                            <constraint firstAttribute="width" constant="128" id="Thn-Bq-kp5"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="tint">
-                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </imageView>
                                     <stackView hidden="YES" opaque="NO" alpha="0.0" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Y5P-UI-Aim">
-                                        <rect key="frame" x="30" y="238" width="333" height="39"/>
+                                        <rect key="frame" x="30" y="214" width="333" height="39"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stopped 48 minutes early" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HO5-Bz-PPn">
                                                 <rect key="frame" x="0.0" y="0.0" width="333" height="18"/>
@@ -221,14 +209,22 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbu-4v-661">
+                                        <rect key="frame" x="146.66666666666666" y="94" width="100" height="100"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="B3S-bJ-FsZ"/>
+                                            <constraint firstAttribute="height" constant="100" id="Vft-7k-KiQ"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="Y5P-UI-Aim" firstAttribute="leading" secondItem="ZYq-hc-2SM" secondAttribute="leading" constant="30" id="9hI-56-ZDB"/>
                                     <constraint firstAttribute="trailing" secondItem="Y5P-UI-Aim" secondAttribute="trailing" constant="30" id="G09-Ws-bdR"/>
-                                    <constraint firstItem="Y5P-UI-Aim" firstAttribute="top" secondItem="856-4d-fNp" secondAttribute="bottom" constant="10" id="lxL-Z8-XsO"/>
-                                    <constraint firstItem="856-4d-fNp" firstAttribute="centerX" secondItem="ZYq-hc-2SM" secondAttribute="centerX" id="wNe-ia-Oxd"/>
-                                    <constraint firstItem="856-4d-fNp" firstAttribute="centerY" secondItem="ZYq-hc-2SM" secondAttribute="centerY" id="x3O-P7-MWy"/>
+                                    <constraint firstItem="fbu-4v-661" firstAttribute="centerY" secondItem="ZYq-hc-2SM" secondAttribute="centerY" constant="-20" id="V0X-ua-yeE"/>
+                                    <constraint firstItem="fbu-4v-661" firstAttribute="centerX" secondItem="ZYq-hc-2SM" secondAttribute="centerX" id="eOV-Ro-fmi"/>
+                                    <constraint firstItem="Y5P-UI-Aim" firstAttribute="top" secondItem="fbu-4v-661" secondAttribute="bottom" constant="20" id="ke9-Cc-gY4"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -266,9 +262,9 @@
                         <outlet property="bubbleTableView" destination="RTW-k8-a36" id="CJC-bJ-ajD"/>
                         <outlet property="chooseTimeButton" destination="AFR-4l-azp" id="TFY-DM-GPQ"/>
                         <outlet property="chooseTimeStackView" destination="Mdc-36-UuB" id="nhd-yT-FpF"/>
+                        <outlet property="containerCircleView" destination="fbu-4v-661" id="oRL-QT-fH2"/>
                         <outlet property="editView" destination="3LY-GE-YA2" id="sd3-eZ-phK"/>
                         <outlet property="leftTimeLabel" destination="Bnq-gb-jUs" id="GrH-tf-IgV"/>
-                        <outlet property="lockImage" destination="856-4d-fNp" id="2fE-uq-GrE"/>
                         <outlet property="lockLabel" destination="yge-bF-Rqv" id="i2B-Zk-fFr"/>
                         <outlet property="powerReducedLabel" destination="znK-ik-lTc" id="BfZ-ao-ZjH"/>
                         <outlet property="stopButton" destination="kTm-tO-Ytm" id="JsO-OJ-QOG"/>
@@ -347,8 +343,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fRN-04-r22">
-                                <rect key="frame" x="0.0" y="173" width="393" height="611"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="0.0" y="118" width="393" height="734"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWO-fH-QH3" customClass="CustomButton" customModule="BlockFocusApp" customModuleProvider="target">
                                 <rect key="frame" x="320" y="138" width="61" height="35"/>
@@ -383,12 +379,12 @@
                         <constraints>
                             <constraint firstItem="RRg-y2-tYv" firstAttribute="top" secondItem="ayM-kX-BvL" secondAttribute="top" constant="20" id="ATr-hi-qlO"/>
                             <constraint firstItem="CWO-fH-QH3" firstAttribute="top" secondItem="ayM-kX-BvL" secondAttribute="top" constant="20" id="FLm-Eu-rIy"/>
-                            <constraint firstItem="ayM-kX-BvL" firstAttribute="bottom" secondItem="fRN-04-r22" secondAttribute="bottom" id="HxO-LC-Uf1"/>
                             <constraint firstItem="ayM-kX-BvL" firstAttribute="trailing" secondItem="fRN-04-r22" secondAttribute="trailing" id="IZO-ws-fbJ"/>
-                            <constraint firstItem="fRN-04-r22" firstAttribute="top" secondItem="CWO-fH-QH3" secondAttribute="bottom" id="dGv-Cj-kbO"/>
+                            <constraint firstItem="fRN-04-r22" firstAttribute="top" secondItem="ayM-kX-BvL" secondAttribute="top" id="WX6-sl-8fy"/>
                             <constraint firstItem="fRN-04-r22" firstAttribute="leading" secondItem="ayM-kX-BvL" secondAttribute="leading" id="dmZ-oB-WLD"/>
                             <constraint firstItem="CWO-fH-QH3" firstAttribute="leading" secondItem="RRg-y2-tYv" secondAttribute="trailing" constant="10" id="fNx-y8-Mgu"/>
                             <constraint firstItem="RRg-y2-tYv" firstAttribute="leading" secondItem="ayM-kX-BvL" secondAttribute="leading" constant="20" id="mU9-2d-rIa"/>
+                            <constraint firstAttribute="bottom" secondItem="fRN-04-r22" secondAttribute="bottom" id="toH-45-ief"/>
                             <constraint firstItem="ayM-kX-BvL" firstAttribute="trailing" secondItem="CWO-fH-QH3" secondAttribute="trailing" constant="12" id="yhS-Di-0ge"/>
                         </constraints>
                     </view>
@@ -399,14 +395,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ygj-3U-WdU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1522.9007633587785" y="-35.211267605633807"/>
+            <point key="canvasLocation" x="1518.3206106870227" y="-35.211267605633807"/>
         </scene>
     </scenes>
     <resources>
-        <image name="lock" width="96" height="96"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

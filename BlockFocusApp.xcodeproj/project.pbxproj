@@ -17,6 +17,7 @@
 		C09290452E6AE25100EDF0F1 /* BlockFocusAppDeviceActivityMonitor.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C092903B2E6AE25100EDF0F1 /* BlockFocusAppDeviceActivityMonitor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C092904C2E6AFB1E00EDF0F1 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C092904B2E6AFB1E00EDF0F1 /* Kingfisher */; };
 		C09291DF2E6B237000EDF0F1 /* BlockFocusAppDeviceActivityReport.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = C09291D32E6B237000EDF0F1 /* BlockFocusAppDeviceActivityReport.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C0A5ECEB2E8008F700D7C2D1 /* KDCircularProgress in Frameworks */ = {isa = PBXBuildFile; productRef = C0A5ECEA2E8008F700D7C2D1 /* KDCircularProgress */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C092904C2E6AFB1E00EDF0F1 /* Kingfisher in Frameworks */,
+				C0A5ECEB2E8008F700D7C2D1 /* KDCircularProgress in Frameworks */,
 				C06A60272E6C33BD0085A9D2 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +279,7 @@
 			packageProductDependencies = (
 				C092904B2E6AFB1E00EDF0F1 /* Kingfisher */,
 				C06A60262E6C33BD0085A9D2 /* SnapKit */,
+				C0A5ECEA2E8008F700D7C2D1 /* KDCircularProgress */,
 			);
 			productName = BlockFocusApp;
 			productReference = C0928A862E68E2E900EDF0F1 /* BlockFocusApp.app */;
@@ -409,6 +412,7 @@
 			packageReferences = (
 				C092904A2E6AFB1E00EDF0F1 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				C06A60252E6C33BD0085A9D2 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				C0A5ECE92E8008F700D7C2D1 /* XCRemoteSwiftPackageReference "KDCircularProgress" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C0928A872E68E2E900EDF0F1 /* Products */;
@@ -993,6 +997,14 @@
 				minimumVersion = 8.5.0;
 			};
 		};
+		C0A5ECE92E8008F700D7C2D1 /* XCRemoteSwiftPackageReference "KDCircularProgress" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kaandedeoglu/KDCircularProgress.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.4;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1005,6 +1017,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C092904A2E6AFB1E00EDF0F1 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		C0A5ECEA2E8008F700D7C2D1 /* KDCircularProgress */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0A5ECE92E8008F700D7C2D1 /* XCRemoteSwiftPackageReference "KDCircularProgress" */;
+			productName = KDCircularProgress;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

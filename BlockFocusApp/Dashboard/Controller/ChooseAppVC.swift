@@ -9,6 +9,7 @@ import UIKit
 import SwiftUI
 import FamilyControls
 import ManagedSettings
+import SnapKit
 
 protocol ChooseAppVCDelegate: AnyObject {
     
@@ -36,8 +37,14 @@ class ChooseAppVC: UIViewController {
                                                              set: { self.selection = $0 }))
         
         let hosting = UIHostingController(rootView: picker)
-        hosting.view.frame = pickerView.bounds
         pickerView.addSubview(hosting.view)
+        
+        hosting.view.snp.makeConstraints { make in
+            make.leading.equalToSuperview()
+            make.top.equalToSuperview()
+            make.trailing.equalToSuperview()
+            make.bottom.equalToSuperview()
+        }
     }
 
     @IBAction func doneButtonClick(_ sender: CustomButton) {

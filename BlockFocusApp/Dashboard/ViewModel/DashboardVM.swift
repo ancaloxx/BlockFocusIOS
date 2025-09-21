@@ -12,7 +12,7 @@ import DeviceActivity
 class DashboardVM: ObservableObject {
     
     @Published var selection = FamilyActivitySelection()
-    @Published var animateToCenter = false
+    @Published var scaleAnimate = false
     @Published var targetCenter: CGPoint = .zero
     
     var listBundle = [String]()

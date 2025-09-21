@@ -11,6 +11,7 @@ import FamilyControls
 import ManagedSettings
 import Kingfisher
 import SnapKit
+import KDCircularProgress
 
 class DashboardVC: UIViewController {
 
@@ -22,10 +23,11 @@ class DashboardVC: UIViewController {
     @IBOutlet weak var lockLabel: UILabel!
     @IBOutlet weak var editView: CustomView!
     @IBOutlet weak var bubbleTableView: UITableView!
-    @IBOutlet weak var lockImage: CustomImageView!
+//    @IBOutlet weak var lockImage: CustomImageView!
     @IBOutlet weak var stoppedStackView: UIStackView!
     @IBOutlet weak var stoppedLabel: UILabel!
     @IBOutlet weak var powerReducedLabel: UILabel!
+    @IBOutlet weak var containerCircleView: UIView!
     
     private var store = ManagedSettingsStore()
     private var viewModel = DashboardVM()
@@ -35,6 +37,7 @@ class DashboardVC: UIViewController {
     private var blockAppCellFrames = [CGRect]()
     
     private var listAppView: UIView!
+    private var circularGradient = UIView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,9 +49,7 @@ class DashboardVC: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            self.requestScreenTimeAuth()
-        }
+        self.requestScreenTimeAuth()
         
 //        store.clearAllSettings()
         
@@ -89,6 +90,36 @@ class DashboardVC: UIViewController {
             make.top.equalToSuperview().offset(8)
             make.trailing.equalToSuperview().offset(-80)
             make.bottom.equalToSuperview().offset(-8)
+        }
+        
+//        circularGradient.startAngle = -90
+//        circularGradient.progressThickness = 0.8
+//        circularGradient.trackThickness = 1
+//        circularGradient.clockwise = true
+//        circularGradient.roundedCorners = true
+//        circularGradient.glowMode = .forward
+//        circularGradient.glowAmount = 50
+//        circularGradient.progress = 1
+//        circularGradient.trackColor = UIColor.clear
+//        
+//        circularGradient.set(colors:
+//            UIColor.systemPink,
+//            UIColor.blue,
+//            UIColor.systemRed
+//        )
+//        
+//        circularGradient.gradientRotateSpeed = 2
+        let circularGradientView = CircularGradientView(viewModel: viewModel)
+        let hostingCircularGradient = UIHostingController(rootView: circularGradientView)
+        circularGradient = hostingCircularGradient.view!
+        circularGradient.backgroundColor = UIColor.clear
+        
+        addChild(hostingCircularGradient)
+        containerCircleView.insertSubview(circularGradient, at: 0)
+        hostingCircularGradient.didMove(toParent: self)
+        
+        circularGradient.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
         }
     }
     
@@ -233,7 +264,7 @@ class DashboardVC: UIViewController {
         })
         
         UIView.animate(withDuration: 1,
-                       delay: 10,
+                       delay: 4,
                        options: .curveEaseInOut,
                        animations: {
             self.stopButton.alpha = 1
@@ -336,6 +367,8 @@ class DashboardVC: UIViewController {
                     snapshot.transform = CGAffineTransform(scaleX: 0.7, y: 0.7)
                 })
             }
+            
+            viewModel.scaleAnimate = true
         } else {
 //            viewModel.animateToCenter = false
             
@@ -361,6 +394,8 @@ class DashboardVC: UIViewController {
                     self.blockAppCellFrames.removeAll()
                 }
             })
+            
+            viewModel.scaleAnimate = false
         }
     }
     
@@ -372,26 +407,19 @@ class DashboardVC: UIViewController {
                        options: .curveEaseInOut,
                        animations: {
             self.bubbleTableView.alpha = 1
-            self.lockImage.alpha = 0
-        }, completion: { _ in
-            self.lockImage.isHidden = true
+            self.circularGradient.alpha = 0
         })
         
         stopButton.setTitle("Stop Early", for: .normal)
     }
     
     private func hideBubble() {
-        self.lockImage.isHidden = false
-        
-        
-        
         UIView.animate(withDuration: 0.15,
                        delay: 0,
                        options: .curveEaseInOut,
                        animations: {
             self.bubbleTableView.alpha = 0
-            self.lockImage.alpha = 1
-            self.stoppedStackView.alpha = 1
+            self.circularGradient.alpha = 1
         }, completion: { _ in
             self.bubbleTableView.isHidden = true
         })
@@ -415,7 +443,7 @@ class DashboardVC: UIViewController {
         
         stoppedLabel.text = "Stopped \(combineText) early"
         
-        UIView.animate(withDuration: 1,
+        UIView.animate(withDuration: 2,
                        delay: 0,
                        options: .curveEaseInOut,
                        animations: {
@@ -463,6 +491,8 @@ class DashboardVC: UIViewController {
         Constants.userDefaults?.set(false, forKey: "isShield")
         
         if viewModel.isStopEarly {
+            viewModel.isStopEarly = false
+            
             viewModel.stopShield()
             
             hideBubble()

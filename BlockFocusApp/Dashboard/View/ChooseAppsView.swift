@@ -33,6 +33,7 @@ struct ChooseAppsView: View {
                 ForEach(Array(viewModel.selection.applications), id: \.self) { item in
                     ZStack {
                         Label(item.token!).labelStyle(.iconOnly)
+                            .scaleEffect(x: 1.7, y: 1.7)
                     }
                 }
             }
